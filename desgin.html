@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cute wali website</title>
+</head>
+<body>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="Main html page.html">Home</a></li>
+        <li><a href="desgin.html">Design</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="practice.html">Practice</a></li>
+    </ul>
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>
+    <div class="logo">
+        <img src="C:\Users\honey\OneDrive\Desktop\kurologo.jpg" alt="Logo" width="50" height="50">
+    </div>
+    <button class="login-button">Login</button>
+</nav>
+
+<style>
+    .nav-links {
+        gap: 15px;
+        color: rgb(179, 23, 23);
+    }
+
+    .nav-links a {
+        color: inherit;
+        transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+        color: pink;
+
+    }
+    
+    .navbar {
+        background-color: #867d7d;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        flex:1;
+        gap: 15px;
+        border-radius: 10px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        order: 1;
+         border-radius: 10px;
+    }
+    .video {
+        margin: 20px 0;
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        justify-content: left;
+        background-color: #f2f2f2;
+        border: 1px solid #ddc9c9;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+         border-radius: 10px;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: color 0.5s;
+    }
+    .search-container input[type="text"] {
+        padding: 5px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .search-container a{
+        color: inherit;
+        transition: color 0.3s;
+    }
+    .search-container :active {
+        background-color: #bd9f9f;
+    }
+    .login-button {
+         border-radius: 10px;
+    }
+    body{
+        margin: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: #ffffff;
+    }
+</style>
+
+<div class="Media-cont">
+        <div><h3>Two brainrot Videos</h3></div>
+
+<video class="video1" controls width="500">
+        <source src="C:\Users\honey\OneDrive\Desktop\ちきゅう大爆発／P丸様。.mp4" type="video/mp4">
+        <source src="C:\Users\honey\OneDrive\Desktop\disco.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <video class="video2" controls width="500">
+        <source src="C:\Users\honey\OneDrive\Desktop\Lynaes Deadline Disco [Wuthering Waves].mp4" type="video/mp4">
+        <source src="C:\Users\honey\OneDrive\Desktop\disco.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    </div>   
+    </div>
+</body>
+    <style>
+        h3 {
+            color: #111010;
+            text-align: center;
+            text-decoration: underline;
+        }
+    
+    .Media-cont {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .Media-cont > div:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .Media-cont video {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 700px) {
+        .Media-cont {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+
+<body1>
+    <h1>Feedback Form</h1>
+   
+ <h3>Feedback Form using HTML and CSS</h3>
+<div class="form-box">
+    <div>It only takes two mintues!!!</div>
+   
+</div>
+<form onsubmit="alert('Your feedback has been sent!'); return false;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" required></textarea>
+      <label for="phone">Phone No:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <a href="submited.html"></a><input type="submit" value="Submit">
+  
+</form>
+
+</body1>
+<style>
+    .form-box,h1 {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    form{
+        max-width:400px;
+        margin: 0 auto;
+    }
+    input[type="radio"] {
+    margin-right: 8px;
+    }
+    label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+    color:inherit;
+    transition: color 0.2s;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+label:hover,input[type="radio"]:hover {
+    color: rgb(89, 48, 55);
+}
+input[type="submit"]:active {
+    background-color: #0a6808;
+    border: none;
+    transform: translateY(1px);
+}
+body1{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #a8c8b9;
+    font-family: 'Poppins', sans-serif;
+}
+
+</style>

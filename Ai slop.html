@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mybrand</title>
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px 40px;
+            background-color: blue;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .menu li:hover {
+            color:rgb(248, 83, 0);
+        }
+
+        .login-btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">
+            <img src="C:\Users\avika_ni8gyim\Downloads\logo.avif" height="25" width="25" alt="Mybrand logo">
+        </div>
+        <div class="logo">Mybrand</div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Flowers</li>
+            <li>Trees</li>
+            <li>Contact us</li>
+        </ul>
+        <button class="login-btn" type="button">Login</button>
+    </nav>
+</body>
+</html>

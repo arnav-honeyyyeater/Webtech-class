@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Responsive Website</title>
+    
+ 
+</head>
+<body>
+
+    <header>
+        <h1>My Responsive Websiteeeeee 😍</h1>
+        <p>Resize meowe</p>
+    </header>
+
+    <!-- Applying Local Images -->
+    <img src="C:\Users\honey\OneDrive\Desktop\kuro logo" alt="My profile picture">
+
+    <!-- Flexbox Layout -->
+    <div class="container">
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>About us</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>Nature</p>
+        </div>
+        <div class="box">
+            <h2>Box 3</h2>
+            <p>Contact us</p>
+        </div>
+    </div>
+    
+    <p>Flexbox must have parent element.</p>
+    <p>Child elements are flex elements.</p>
+
+</body>
+   <!-- CSS is placed inside the <style> tag in the <head> -->
+    <style>
+        /* 1. Basic CSS Syntax */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        /* 2. Flexbox Parent Container */
+        .container {
+            display: flex; 
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* 3. Flexbox Child Elements */
+        .box {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        /* 4. Media Query for Design */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Stacks boxes on small screens */
+            }
+           
+        }
+    </style>
+</html>

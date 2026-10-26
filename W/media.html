@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f2f2f2; }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box { background-color: white; border: 2px solid #0e6dad; padding: 20px; }
+        
+        /* Media query for mobile viewports */
+        @media (max-width: 600px) {
+            .container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Flexbox Website</h1>
+    <p>This layout uses a flex parent container.</p>
+    <a href="fluid.html">View Fluid Layout</a> | <a href="grid.html">View Grid Layout</a>
+    <br><br>
+    <img src="images/photo.jpg" alt="A descriptive placeholder image" width="200">
+    
+    <div class="container">
+        <div class="box">Flex Item 1</div>
+        <div class="box">Flex Item 2</div>
+        <div class="box">Flex Item 3</div>
+    </div>
+</body>
+</html>

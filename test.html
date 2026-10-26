@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .flex-box {
+            flex: 1 1 150px;
+            padding: 24px;
+            border: 2px solid #2563eb;
+            background-color: #dbeafe;
+            color: #1e3a8a;
+            text-align: center;
+        }
+
+        .flex-box:first-child {
+            background-color: pink;
+        }
+
+        .flex-box span {
+            color: yellow;
+        }
+
+        .middle-paragraph {
+            margin: 24px auto;
+            padding: 16px;
+            background-color: #fef08a;
+            color: #7e22ce;
+            text-align: center;
+        }
+
+        span {
+            color: rgb(8, 189, 8);
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px 16px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-block">
+        <div class="flex-box">Flex Box 1</div>
+        <div class="flex-box"><span>Flex</span> Box 2</div>
+        <div class="flex-box">Flex Box 3</div>
+        <div class="flex-box">Flex Box 4</div>
+    </div>
+    <p class="middle-paragraph">This paragraph is centered and colored.</p>
+    <span>Span 1</span>
+        <span>Span 2</span>
+
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>html</td>
+                <td>85</td>
+            </tr>
+
+        </table>
+</body>
+</html>

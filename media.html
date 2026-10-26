@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Responsive Boxes</title>
+
+    <style>
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 96%;
+            max-width: 1000px;
+            margin: 30px ;
+
+            display: flex;
+            gap: 22px;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: white;
+            border: 2px solid #0e6dad;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+
+            flex: ;
+            min-height: 180px;
+        }
+
+        .box h{
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .box p {
+            color: #555;
+        }
+
+         
+        @media (max-width: 768px) AND (max-width: 480px) {
+            .container {
+                flex-direction: column;
+                 width: 60%;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+            
+        }
+
+     x
+         
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Responsive Websiteeeeee 😍</h1>
+        <p>Resize meowe</p>
+    </header>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>This is the first responsive box.</p>
+        </div>
+
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>This is the second responsive box.</p>
+        </div>
+
+        <div class="box">
+            <h2>Box 3</h2>
+            <p>This is the third responsive box.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+     

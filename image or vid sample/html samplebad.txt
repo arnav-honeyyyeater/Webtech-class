@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Meme video</title>
+</head> <h1>A sample music video: Deadline disco</h1> </head>
+<video controls >
+  <source src="‪C:\Users\honey\OneDrive\Desktop\Lynae's Deadline Disco ⁽⁽ 〪ɾ( ˘ω˘ 〫ɩ ) ₎.mp4" >
+ 
+</video>
+</html>
+
+
+		

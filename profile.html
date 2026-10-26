@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #243447;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px 8%;
+            background-color: #6c9ed8;
+            color: white;
+        }
+        header img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 55%;
+        }
+        header h1, header p { margin: 6px 0; }
+        .layout {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 30px 8%;
+        }
+        aside {
+            flex: 0 0 190px;
+            padding: 20px;
+            background-color: #dce9f8;
+            border-radius: 10px;
+        }
+        aside h2 { margin-top: 10px; }
+        aside a {
+            display: block;
+            margin: 12px 0;
+            color: #243447;
+            text-decoration: none;
+        }
+       
+
+        .box {
+            flex: 2;
+            margin: 5px;    
+            padding: 24px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccd6e0;
+        }
+        @media (max-width: 600px) {
+            .layout { flex-direction: column; padding: 20px; }
+            aside, .box { width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="kuro logo.jpg" alt="Profile logo">
+        <div>
+            <h1>This is me!</h1>
+            <p>Welcome to my profile.</p>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside>
+            <h2>Menu</h2>
+            <a href="profile.html">Home</a>
+            <a href="#contact">Contact Info</a>
+            <a href="#about">About Me</a>
+        </aside>
+
+        <main class="box" id="about">
+            <h2>About me!</h2>
+            <p>My name is Arnvv and I am a student studying at Christ lavasa.</p>
+        </main>
+    </div>
+    <div    class="layout">
+            <main class="box" id="contact">
+                <h2>Contact Info</h2>
+                <p>Email: example@example.com</p>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
