@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute wali website | Pani Puri</title>
+    <link rel="icon" href="kuro%20logo.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #faf7fc;
+            color: #332b3d;
+            line-height: 1.5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px 20px;
+            background-color: #e5d7f3;
+        }
+
+        .logo img {
+            display: block;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #603a83;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus-visible, input:focus-visible, textarea:focus-visible {
+            outline: 3px solid #603a83;
+            outline-offset: 3px;
+        }
+
+        .page-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sidebar-left, .sidebar-right {
+            width: 140px;
+            flex-shrink: 0;
+            padding: 20px;
+            background-color: #eee5f6;
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            margin-top: 0;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        .Media-cont {
+            flex: 1;
+            min-width: 0;
+            text-align: center;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #25202d;
+        }
+
+        .feedback-section {
+            padding: 30px 20px;
+            background-color: #dceee2;
+        }
+
+        .feedback-section h1, .form-box {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #879b8d;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #603a83;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #492867;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e5d7f3;
+        }
+
+        @media (max-width: 900px) {
+            .page-content {
+                flex-direction: column;
+            }
+
+            .sidebar-left, .sidebar-right, .Media-cont {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .videos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">
+            <a href="index.html">
+                <img src="kuro%20logo.jpg" alt="Kuro logo" width="50" height="50">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="desgin.html">Design</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#feedback-section">Feedback</a></li>
+        </ul>
+        <a href="#feedback-section">Feedback</a>
+    </nav>
+
+    <div class="page-content">
+        <aside class="sidebar-left">
+            <h2>Explore</h2>
+            <ul>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#feedback-section">Feedback</a></li>
+            </ul>
+        </aside>
+
+        <main class="Media-cont" id="videos">
+            <h2>Two brainrot Videos</h2>
+            <div class="videos">
+                <video controls preload="metadata" playsinline aria-label="Chikyu Daibakuhatsu">
+                    <source src="chikyu-daibakuhatsu.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls preload="metadata" playsinline poster="deadline-poster.jpg" aria-label="Lynae's Deadline Disco">
+                    <source src="deadline-disco.mp4" type="video/mp4">
+                    <source src="disco.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+            <h2>Quick links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#feedback-section">Feedback</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <section class="feedback-section" id="feedback-section">
+        <h1>Feedback Form</h1>
+        <div class="form-box">
+            <p>It only takes two minutes!</p>
+            <p id="form-note">Practice form only. Your feedback is not sent or saved.</p>
+        </div>
+        <form aria-describedby="form-note" onsubmit="alert('This is a practice form. Your feedback has not been sent.'); return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+            <input type="submit" value="Submit demo">
+        </form>
+    </section>
+
+    <footer>
+        <p>Author: Pani puri</p>
+        <a href="#videos">Back to videos</a>
+        <p>Copyright &copy; 2023 Pani puri. All rights reserved.</p>
+    </footer>
+</body>
+</html>
